@@ -1,3 +1,31 @@
+<div align="center">
+
+# 📦 This repository is archived
+
+**`io.boomerang:lib-scheduling` — Boomerang's fork of [quartz-mongodb](https://github.com/michaelklishin/quartz-mongodb), the MongoDB job store for the Quartz scheduler used by Boomerang Flow v3 (last release 3.0.3, 2022).**
+
+Flow v5 does not use Quartz (or JobRunr, which v4 tried): schedules are documents in `workflow_schedules` fired by a claim-based `ScheduleWatcher` inside service-core.
+
+[![Boomerang Flow v5](https://img.shields.io/badge/Boomerang%20Flow-v5%20monorepo-6f42c1?style=for-the-badge&logo=github)](https://github.com/boomerang-io/flow)
+[![Issues](https://img.shields.io/badge/Issues-boomerang--io%2Fflow-1d76db?style=for-the-badge)](https://github.com/boomerang-io/flow/issues/new/choose)
+
+</div>
+
+> [!IMPORTANT]
+> **Archived on 2026-09-01.** Read-only; nothing is maintained here.
+> | What you probably want | Where |
+> | --- | --- |
+> | How Flow v5 fires schedules | [`specifications/execution-model.md`](https://github.com/boomerang-io/flow/blob/feat-v5/specifications/execution-model.md) ("Schedules") — `service-core/src/main/java/io/boomerang/schedule/ScheduleWatcher.java` |
+> | The upstream project | [michaelklishin/quartz-mongodb](https://github.com/michaelklishin/quartz-mongodb) — use it directly for anything new |
+> | The fork as Flow v3 used it | this archive — `io.boomerang:lib-scheduling:3.0.3`, the store behind the v3 Quartz scheduler |
+>
+> If a security fix is ever needed for a v3 install, unarchive, patch, tag, and re-archive.
+
+---
+
+<details>
+<summary>Original README (historical)</summary>
+
 # A MongoDB-based store for Quartz.
 
 This is a MongoDB-backed job store for the [Quartz scheduler](http://quartz-scheduler.org/).
@@ -191,3 +219,5 @@ and implementation code refactored, I decided to completely separate
 this fork form GitHub forks network because the project is now too
 different from the original one. All changes were made with respect to
 the Apache Public License 2.0.
+
+</details>
